@@ -1,0 +1,11 @@
+replicaCount: 1
+
+tomcatmetadata:
+  name: tomcatserver
+  label: front-end
+  containername: frontend
+
+image:
+  repository: tomcat
+  tag: "9.0"
+  jre: jre17
