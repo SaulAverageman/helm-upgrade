@@ -17,4 +17,6 @@ spec:
       containers:
       - name: {{.Values.tomcatmetadata.containername}}
         image: "{{.Values.image.repository}}:{{.Values.image.tag}}-{{.Values.image.jre}}"
-        
+        ports:
+          - containerPort: {{.Values.image.spec.containerport}}
+
